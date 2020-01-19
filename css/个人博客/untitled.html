@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<style type="text/css">
+		*{
+　　margin: 0;
+　　padding: 0;
+}
+img,div{/*注意图片跟div大小要一致，位置要重合*/
+　　width: 200px;
+　　height: 200px;
+}
+div{/*设置好div位置后，设为隐藏*/
+　　background-color: rgba(242, 242, 242, 0.7);
+　　position: absolute;
+　　margin-top: -203px;
+　　display: none;
+}
+/*出现bug位置*/
+img:hover + div{/*鼠标浮动到img，让后面紧跟的div的display样式改为显示block*/
+　　display: block;
+　　cursor: pointer;
+}
+span{
+　　display: inline-block;
+　　margin-bottom: 15px;
+　　margin-left: 70px;
+}
+span:nth-of-type(1){
+　　margin-top: 50px;
+}img:hover + div, div : hover{
+　　display: block;
+　　cursor: pointer;
+}
+	</style>
+</head>
+
+<body>
+	 <img src="images/2.jpg">
+ <div> 
+ 　　<span>图片1</span>
+ 　　<span>姓名</span>
+ </div>
+</body>
+</html>

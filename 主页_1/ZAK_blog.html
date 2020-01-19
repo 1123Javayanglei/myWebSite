@@ -1,0 +1,439 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ZAK_blog</title>
+	<style type="text/css">
+		embed{
+			position: fixed;
+			height: 0;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-size: 22px;
+		}
+		body{
+			height: 100%;
+			width: 100vw;
+		}
+		.top_1{
+			width: 100%;
+			height: 10px;
+			background: #1D1B1B;
+		}
+		.navbar{
+			box-sizing: border-box;
+			font-size: 30px;
+			font-weight: 3px;
+			width: 100%;
+			position: fixed;
+			border-bottom: 2px solid #A19B9B;
+			z-index: 999;
+			text-align: center;
+			
+		}
+		.top{
+			height: 61.5px;
+			background-color: white;
+	
+		}
+		.navbar ul li{
+			display: inline-block;
+			padding-left: 30px;
+			height: 50px;
+		}
+		.navbar ul li a{
+			color:#3C2425;
+			text-align: center;
+			line-height: 60px;
+			text-decoration:none;
+		}
+		.title{
+
+			position:relative;
+			top: 14%;
+			left:0;
+			box-sizing:border-box;
+		}
+		.title_1{
+			position: relative;
+			left: 20%;
+			top: 150px;
+			height: 50px;
+			width: 200px;
+		}
+		.img_1{
+			height: 20px;
+			width: 20px;
+		}
+		.title_2{
+			position: relative;
+			top:50px;
+			left: 40%;
+			width: 300px;
+			text-align: center;
+		}
+		#container{
+			position: relative;
+			top: -70px;
+			left: 29%;
+			height: 9%;
+			width: 500px;
+			margin:0 auto;
+		}
+		div.search {
+			padding:10px 0;
+		}
+		form {
+			position:relative;
+			width:300px;
+			margin:0 auto;
+		}
+		input,button {
+			border:none;
+			outline:none;
+		}
+		input {
+			width:100%;
+			height:42px;
+			padding-left:13px;
+		}
+		button {
+			height:42px;
+			width:42px;
+			cursor:pointer;
+			position:relative;
+		}
+		     
+		.bar6 input {
+			border:2px solid #A19B9B ;
+			border-radius:5px;
+			background:transparent;
+			top:0;
+			right:0;
+		}
+		.bar6 button {
+			background:#A19B9B ;
+			border-radius:0 5px 5px 0;
+			width:60px;
+			top:0;
+			right:0;
+			position: absolute;
+			right: 0%;
+			
+		}
+		.bar6 button:before {
+			content:"Search";
+			font-size:13px;
+			color:aquamarine;
+		}
+		.beijing{
+			position: relative;
+			top: 40%;
+			width: 100%;
+			height: 80vh;
+			background: url(img/sean-o-406693-unsplash.jpg) ;
+			background-size: cover;
+		}
+		.beijing_1{
+			width: 100%;
+			height: 200px;
+			margin: 50px auto;
+			line-height: 200px; /*设置line-height与父级元素的height相等*/
+			text-align: center; /*设置文本水平居中*/
+			overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+			color: white;
+			font-size: 100px;
+			position: relative;
+			top: 20%;
+		}
+		.beijing_2{
+			width: 10%;
+			height:8%;
+			margin: 50px auto;
+			background: #FF0000;
+			line-height: 50px; /*设置line-height与父级元素的height相等*/
+			text-align: center; /*设置文本水平居中*/
+			overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+			color: white;
+			font-size: 20px;
+			position: relative;
+			top: 10%;
+			border: #FF0000 2px solid;
+		}
+		.beijing_2 > a{
+			color: white;
+			text-decoration: none;
+		}
+		.beijing_2:hover{
+			background: white;
+		}
+		.beijing_2 >a:hover{
+			background: white;
+			color:red;
+		}
+		.body_home{
+			height: 100%;
+			width: 100vw;
+		}
+		.body_home_1{
+			border: #A19B9B solid 2px;
+			height: 127vh;
+			width: 65vw;
+			position: relative;
+			left: 2%;
+			text-align: center;
+		}
+		.body_home_1_title{
+            margin: 50px auto;
+            text-align: center; /*设置文本水平居中*/
+            padding: 50px 20px;
+			color: #3C2425;
+			font-family:"trebuchet ms";
+			font-size: 30px;
+			position: relative;
+			top: -5%;
+		}
+		.body_home_1_title_1{
+			height: 60%;
+			width: 100%;
+			background:url(img/292A8613.JPG) no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			top: -10%;
+			
+		}
+		.body_home_1_title_2{
+			color: #A19B9B;
+			font-size: 20px;
+			text-align: center;
+			position: relative;
+			top: -5%;
+			
+		}
+		.body_home_1_title_2 > a{
+			color: darkmagenta;
+			text-decoration: none;
+			border-bottom: 2px solid darkmagenta;  
+			border-top:0px;  
+			border-left:0px;  
+			border-right:0px; 
+		}
+		.body_home_1_title_3 >a{
+			color: red;
+			text-decoration: none;
+			border-bottom: 2px solid red;  
+			border-top:0px;  
+			border-left:0px;  
+			border-right:0px; 
+			font-size: 15px;
+		}
+		.body_home_1_title_4{
+			background: deepskyblue ;
+			height:5%;
+			width: auto;
+			position: relative;
+			top: 3%;
+			color: #A19B9B;
+			font-size: 20px;
+		}
+		.body_home_1_title_4_1{
+			position: relative;
+			top: 20%;
+			left: 0%;
+		}
+		.body_home_1_title_4_1:hover{
+			color: red;
+		}
+		.body_home_2{
+			border: #A19B9B solid 2px;
+			background: cadetblue;
+			height: 120vh;
+			width: 28vw;
+			position: relative;
+			left: 70%;
+			top: -127%;
+			text-align: center;
+		}
+		.body_home_2_title_1{
+			position: relative;
+			top: 2%;
+		}
+		..body_home_2_title_1 > a{
+			font-size: 100px;
+			font-weight:400;
+			font-family:arial;
+		}
+		.body_home_2_title_2{
+			width: 350px;
+			height: 350px;
+			border-radius: 175px;
+			background: red;
+			position: relative;
+			top: 5%;
+			left: 6%;
+			background: url(img/%E5%BC%A0%E5%BF%97%E8%80%802.jpg);
+			background-size: 100% 100%;
+		}
+		.body_home_2_title_3{
+			color: black;
+			font-family:georgia;
+			font-size: 25px;
+			width: 400px;
+            margin: 50px auto;
+            text-align: center; /*设置文本水平居中*/
+            padding: 50px 20px;
+		}
+		.body_home_2_title_4{
+			position: relative;
+			bottom: 6%;
+		}
+		.body_home_2_title_4 >a{
+			font-family: times;
+			font-size: 18px;
+			color: red;
+			border-bottom: 2px red solid;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+			
+		}
+		.bottom{
+			width: 100vw;
+			height: 20%;
+			position: relative;
+			top: -110%;
+			text-align: center;
+		}
+		.bottom_1_1{
+			font-family:helvetica;
+			height: 20%;
+			text-align: center;
+			
+		}
+		.bottom_1_1 ul{
+			display:inline-block;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.bottom_1_1 ul li{
+			float: left;
+			text-align: center;
+			border-bottom: 1px darkgray solid;
+		}
+		.bottom_1_1 ul li a{
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+		.bottom_2 ul{
+			display: inline-block;
+			list-style-type: none;
+			padding-top: 25px;
+		}
+		.bottom_2 ul li{
+			float: left;
+			text-align: center;
+		}
+		.bottom_2 ul li a{
+			padding: 8px 16px;
+		}
+		.bottom_3{
+			padding-top: 30px;
+		}
+	</style>
+</head>
+
+<body>
+		<embed src="mp3/借我.mp3"></embed>
+	
+	<div>
+		<div class="top_1"></div>
+		<div class="navbar top">
+			<ul>
+				<li><a href="HOME_1.html">HOME</a></li>
+				<li><a href="ZAK_blog.html">ABOUT ME</a></li>
+				<li><a href="Ameng_blog.html">ABOUT AMANE</a></li>
+				<li><a href="Yanglei_blog.html">ABOUT Yang</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<div class="title_1">
+				<table cellspacing="18px">
+					<tr>
+						<td><img class="img_1" src="img/微信.png" /></td>
+						<td><img class="img_1" src="img/qq.png" /></td>
+						<td><img class="img_1" src="img/微博.png" /></td>
+						<td><img class="img_1" src="img/知乎.png" /></td>
+					</tr>
+				</table>
+			</div>
+			<div class="title_2">
+				<img src="img/WechatIMG104.png"\ alt="img_1" width="219px" height="131px">
+				<h6>My blog</h6>
+			</div>
+			<div id="container">
+				<div class="search bar6">
+					<form>
+					<input type="text" placeholder="please enter" name="seach">
+					<button type="submit"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="beijing">
+			<div class="beijing_1">WELCOME TO MY BLOG</div>
+			<div class="beijing_2"><a href="#read">READ MORE</a></div>			
+		</div>
+		<div class="body_home">
+			<div class="body_home_1">
+				<div class="body_home_1_title"> 
+I'm Zhangzhiyao, 17 years old. I go to school in the Nanyang Vocational College.<br> I like to study science and technology, and I like to play games</div>
+				<div class="body_home_1_title_1"></div>
+				<div class="body_home_1_title_2">August 20, 2018 / In <a href="http://www.nyzyxy.com/">Nanyang Vocational College</a> </div>
+				<div class="body_home_1_title_3"><a href="http://www.haedu.gov.cn/2018/08/20/1534729862750.html">Continue Reading</a> </div>
+				<div class="body_home_1_title_4">
+					<div class="body_home_1_title_4_1"> Share This
+					<tr>
+						<td><img src="img/微信的副本.png" height="20px"</td>
+						<td><img src="img/QQ的副本.png" height="20px"</td>
+						<td><img src="img/微博的副本.png" height="20px"</td>
+						<td><img src="img/知乎.png" height="20px"</td>						
+					</tr>
+					</div>
+				</div>
+			</div>
+			<div class="body_home_2">
+				<div class="body_home_2_title_1"><a name="read">About Me</a></div>
+				<div class="body_home_2_title_2"></div>
+				<div class="body_home_2_title_3">Have the courage to follow your heart and intuition。 They somehow already know what you truly want to become。 Everything else is secondary。</div>
+				<div class="body_home_2_title_4"><a> More About Myself</a></div>
+			</div>
+			<div class="bottom">
+				<div class="bottom_1_1">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blong</a></li>
+						<li><a href="#">URL</a></li>
+					</ul>
+				</div>
+				<div class="bottom_2">
+					<ul>
+						<li><a><img src="img/微博的副本.png" height="20px" /></a></li>
+						<li><a><img src="img/邮箱.png" height="20px" /></a></li>
+						
+					</ul>
+				</div>
+				<div class="bottom_3">
+					©️·2019·My Blong·Nanyang Vocational College Information Engineering Department 
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
